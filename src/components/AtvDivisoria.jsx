@@ -7,4 +7,5 @@ argumento largura = 30
 <View> inicial = 90% da largura da tela
 <View> esquerda = 30% da largura da View inicial (30% de 90% da largura da tela)
 <View> direita = 70% da largura da View inicial (70% de 90% da largura da  tela)
+(displayflex flex row)
 */
