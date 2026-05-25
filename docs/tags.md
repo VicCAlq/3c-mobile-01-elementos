@@ -8,7 +8,7 @@ Comparativo de tags HTML para tags ReactNative:
 |-----------------|-------------------------------|-----------|
 | `<View>` | `<div>`, `<section>`, `<header>`, `<footer>`, `<aside>` | Elementos organizadores, para divisão de conteúdo e formatação de como são exibidos (em linha, coluna, etc) |
 | `<Text>` | `<p>`, `<h1>`, `<h2>`, `<h3>`, etc | Equivalente a tag de parágrafo. React Native não tem tags separadas para tamanhos de textos diferentes, estes devem ser criados com a estilização dos mesmos |
-| `<Pressable>` | `<button>` | Cria um botão com possibilidade de interação |
+| `<Pressable>`(customizavel) | `<button>` | Cria um botão com possibilidade de interação |
 | `<Image>` | `<img>` | Elemento para inserir uma imagem | 
 | `<TextInput>` | `<input type="text">` | Campo de inserção de texto |
 | `<FlatList>` | `<ol>`, `<ul>` | Elemento para criação de listas simples |
