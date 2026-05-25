@@ -10,7 +10,6 @@ no argumento "comando".
 import { View, Pressable, Text} from 'react-native';
 import root from '../styles/main';
 
-
 export default function AtvBotaoAcaoExterna ({comando}) {
     return (
         <View>
@@ -18,7 +17,8 @@ export default function AtvBotaoAcaoExterna ({comando}) {
           <Pressable  
           On Press = {(comando) => console.log("Clique aqui")} >
           </Pressable>
-         
+          
         </View>
     )
 }
+
