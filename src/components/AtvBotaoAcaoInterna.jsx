@@ -7,3 +7,19 @@ com dois elementos: um <Text> com o texto "Clique abaixo", e um <Pressable> com 
 exibe um alerta com o texto "Fui clicado!"
 */
 
+import { View, Pressable, Text, Alert} from 'react-native';
+import root from '../styles/main';
+
+
+export default function AtvBotaoAcaoInterna ({}) {
+    return(
+        <View>
+            <Text>Clique abaixo</Text>
+            <Pressable
+            On Press = {() => Alert.alert('Fui Clicado!')}>
+            </Pressable>
+        </View>
+    )
+}
+
+
