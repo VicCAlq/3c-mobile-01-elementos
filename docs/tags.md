@@ -14,6 +14,7 @@ Comparativo de tags HTML para tags ReactNative:
 | `<FlatList>` | `<ol>`, `<ul>` | Elemento para criação de listas simples |
 | `<Switch>` | `<input type="checkbox">` | Chave de liga-desliga |
 | `<Modal>` | `<dialog>` | Cria uma janela flutuante sobre a página atual |
+| `Alert.alert()` | `window.alert()` | Cria um alerta em uma janela flutuante simples |
 | `StyleSheet.create({})` | `.css` | Equivalente a um arquivo de estilos CSS |
 | `<StatusBar>` | Sem equivalente no HTML | Interage com a barra de status no topo do celular |
 

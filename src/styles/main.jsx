@@ -13,8 +13,11 @@ const root = {
     ok: "#60c0a0",
   },
   spacings: {
-    padding: "5px",
+    paddingP: "5px",
+    paddingM: "10px",
+    paddingG: "15px",
     margin: "10px",
+    gap: "10px",
   }
 }
 

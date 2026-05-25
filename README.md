@@ -5,8 +5,6 @@ Sigam as instruções abaixo para a realização das atividades:
 - [Arquivos para consulta](#arquivos-para-consulta)
 - [Formato da atividade](#formato-da-atividade)
 - [Para responder as atividades](#para-responder-as-atividades)
-- [Instruções da atividade](#instruções-da-atividade)
-- [Dicas](#dicas)
 
 ## Arquivos para consulta
 
@@ -28,12 +26,13 @@ Níveis das questões:
 Os arquivos das questões já estão criados dentro da pasta `/src/components/`. Cada arquivo contém a descrição do que deve ser produzido, mas não há nenhum código pois este deve ser completamente feito pelo aluno.
 
 Atenção aos detalhes abaixo:
-1. Os componentes são sempre os arquivos existentes na pasta `/src/components/`
-2. Para testar os componentes, você pode importar eles no arquivo `App.jsx` dentro da pasta `/src/`
-3. Para executar o projeto, abra o terminal na pasta correta (confira com o comando `ls` se a pasta onde você está no terminal exibe as pastas `src`, `assets`, `docs` e `tests`).
-4. Se estiver na pasta correta, digite o comando `npm run web` ainda no terminal para executar o projeto.
-5. Se não estiver na pasta correta, use no terminal os comandos `cd` para navegar para a pasta desejada, `pwd` para conferir onde você está no momento, e `ls` para conferir o conteúdo da pasta atual. Só execute o comando do passo 4 se estiver na pasta correta.
-6. O envio da atividade deve ser feito através do GitHub. Para o envio, siga os passos abaixo.
+1. Os componentes são sempre os arquivos existentes na pasta `/src/components/`.
+2. Os componentes das questões SEMPRE começam com a palavra `Atv` de `Atividade`.
+3. Para testar os componentes, você pode importar eles no arquivo `App.jsx` dentro da pasta `/src/`.
+4. Para executar o projeto, abra o terminal na pasta correta (confira com o comando `ls` se a pasta onde você está no terminal exibe as pastas `src`, `assets`, `docs` e `tests`).
+5. Se estiver na pasta correta, digite o comando `npm run web` ainda no terminal para executar o projeto.
+6. Se não estiver na pasta correta, use no terminal os comandos `cd` para navegar para a pasta desejada, `pwd` para conferir onde você está no momento, e `ls` para conferir o conteúdo da pasta atual. Só execute o comando do passo 4 se estiver na pasta correta.
+7. O envio da atividade deve ser feito através do GitHub. Para o envio, siga os passos abaixo.
 
 ## Para responder as atividades
 
