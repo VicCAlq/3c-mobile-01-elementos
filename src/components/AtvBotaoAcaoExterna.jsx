@@ -7,4 +7,18 @@ função chamada "comando". Este componente deve exibir uma <View> com dois elem
 no argumento "comando".
 */
 
-export default function AtvBotaoAcaoExterna ({comando})
+import { View, Pressable, Text} from 'react-native';
+import root from '../styles/main';
+
+
+export default function AtvBotaoAcaoExterna ({comando}) {
+    return (
+        <View>
+            <Text>Clique abaixo</Text>
+          <Pressable  
+          On Press = {(comando) => console.log("Clique aqui")} >
+          </Pressable>
+         
+        </View>
+    )
+}
