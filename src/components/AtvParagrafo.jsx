@@ -7,8 +7,9 @@ Crie e exporte por padrão um componente chamado "AtvParagrafo" que recebe dois 
 "conteudo" deve ter o tamanho de 16px. O texto do "titulo" deve ficar acima do texto do "conteudo".
 */
 
-import { Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import root from '../styles/main';
+
 
 const estiloTexto = StyleSheet.create({
     titulo : {
@@ -19,11 +20,14 @@ const estiloTexto = StyleSheet.create({
     }
 })
 
+
 export default function AtvParagrafo({titulo, conteudo}) {
     return (
         <View>
              <Text Style = {estiloTexto}>{titulo}</Text>
-             <Text Style = {estiloTexto}>{titulo}</Text>
+             <Text Style = {estiloTexto}>{conteudo}</Text>
         </View>
     )
 }
+
+
