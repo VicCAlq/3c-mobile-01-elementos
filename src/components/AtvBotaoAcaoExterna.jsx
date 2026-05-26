@@ -15,7 +15,7 @@ export default function AtvBotaoAcaoExterna ({comando}) {
         <View>
             <Text>Clique abaixo</Text>
           <Pressable  
-          On Press = {(comando) => console.log("Clique aqui")} >
+          onPress = {(comando) => console.log("Clique aqui")} >
           </Pressable>
           
         </View>
