@@ -1,28 +1,33 @@
 import { View, Pressable, Text, StyleSheet } from 'react-native';
 import root from '../styles/main';
 
+
 const estilo = StyleSheet.create({
-  texto: {
+  titulo: {
     color: root.colors.texto,
-    fontSize: "32px",
+    fontSize: 32
+  },
+
+  conteudo: {
+    color: root.colors.texto,
+    fontSize: 16
   }
 })
 
 
-
-export default function AtvParagrafo {{titulo}} {
+export default function AtvParagrafo ({titulo, conteudo }) {
   return(
-    <Text style={estilo.View}>{conteudo}</Text>
+    <View>
+    <Text style={estilo.titulo}>
+      {titulo}
+      </Text>
+
+      <Text style={estilo.conteudo}>
+        {conteudo}
+      </Text>
+    </View>
   )
 }
-
-
-
-
-
-
-
-
 
 /*
 [ATIVIDADE PARÁGRAFO]
