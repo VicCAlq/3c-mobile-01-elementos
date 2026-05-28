@@ -11,6 +11,7 @@ const root = {
     atencao: "#e0c540",
     cuidado: "#e05030",
     ok: "#60c0a0",
+    azul: "#516ada",
   },
   spacings: {
     paddingP: "5px",
@@ -18,6 +19,9 @@ const root = {
     paddingG: "15px",
     margin: "10px",
     gap: "10px",
+  },
+  percents:{
+    ten: "10%"
   }
 }
 

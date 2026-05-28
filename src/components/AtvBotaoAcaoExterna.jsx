@@ -8,13 +8,34 @@ import { View, Pressable, Text, StyleSheet } from 'react-native';
 import root from '../styles/main';
 
 export default function AtvBotaoAcaoExterna({comando}){
+    const estilo = StyleSheet.create(
+       {
+            botao:{
+                backgroundColor:root.colors.foreground,
+                margin: root.spacings.margin,
+                padding: root.spacings.paddingM,
+                borderRadius: root.percents.ten,
+            },
+            texto:{
+                color: root.colors.texto
+            },
+            div:{
+                backgroundColor:root.colors.azul,
+                margin: root.spacings.margin,
+                padding: root.spacings.paddingG,
+                borderRadius: root.percents.ten
+            }
+        }
+    )
 
-    const comando(){
-
-    }
     return(
-        <View>
-            <Text> {comando} </Text>
+        <View style={estilo.div}>
+            <Text style={estilo.texto}> Clique abaixo </Text>
+            <Pressable onPress={comando} style={estilo.botao}>
+               <Text style={estilo.texto}>
+                Clique aqui
+                </Text> 
+            </Pressable>
         </View>
     )
 }
