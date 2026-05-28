@@ -15,46 +15,45 @@ argumento largura = 30
 import { View, StyleSheet } from "react-native"
 
 
-const estilosDivisorias = StyleSheet.create({
-inicial : {
-    width: "90vw",
-    display: "flex",
-    flex: "wrap",
-     backgroundColor: 'red',
-     
-},
-esquerda : {
-    width: "30vw",
-     backgroundColor: 'black'
-},
-direita : {
-    width: "70vw",
-    backgroundColor: 'white'
+const estilosDivisorias = function(largura) {
+    return StyleSheet.create({
+        inicial : {
+            width: "90vw",
+            display: "flex",
+            flex: "wrap",
+            backgroundColor: 'red',
+            
+        },
+        esquerda : {
+            width: '${largura}' + "vw",
+            backgroundColor: 'black'
+        },
+        direita : {
+            width: '${100 - largura}' + "vw",
+            backgroundColor: 'white'
+        }
+    })
 }
-})
+
 export default function AtvDivisoria(largura) {
-//const maxAltura = math.max = 90 
-//const minAltura = math.min = 10
-if (largura <= 90 || largura >= 10) {
-    const largEsquerda = ((largura/100) * (90/100))
+
+    if (largura <= 90 || largura >= 10) {
+        const larg = largura
 
 
 
-     return(
-    
-    <View style={estilosDivisorias.inicial}> 
-        <View style={estilosDivisorias.esquerda}>{largura}</View>
-        <View style={estilosDivisorias.direita}>{largura}</View>
-    </View>
+        return(
+        
+        <View style={estilosDivisorias.inicial}> 
+            <View style={estilosDivisorias(largura).esquerda}>{largura}</View>
+            <View style={estilosDivisorias(largura).direita}>{largura}</View>
+        </View>
 
-)
+    )
 }
 return(
     
-    <View style={estilosDivisorias.inicial}> 
-        <View style={estilosDivisorias.esquerda}>{largura}</View>
-        <View style={estilosDivisorias.direita}>{largura}</View>
-    </View>
+    <View style={estilosDivisorias.inicial}> </View>
 
 )
 
