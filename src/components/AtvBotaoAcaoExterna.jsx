@@ -1,4 +1,4 @@
-import { Pressable, View } from "react-native";
+import { Pressable, View, Text, StyleSheet } from "react-native";
 
 /*
 [ATIVIDADE BOTÃO COM AÇÃO EXTERNA]
@@ -9,12 +9,25 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoExterna" que receb
  com o texto "Clique aqui" que ao ser pressionado executa a função recebida no 
  argumento "comando".
 */
+const estilo = StyleSheet.create({
+    botao: {
+        backgroundColor: "blue",
+    },
+    texto: {
+        color: "white",
+    }
+})
 
 export default function AtvBotaoAcaoExterna({comando})
 {
     return(<View>
-        <Pressable OnPress={() =>comando}>
-
+        <Text style={estilo.texto}>
+            Clique abaixo
+        </Text>
+        <Pressable onPress={comando} style={estilo.botao}>
+            <Text style={estilo.texto}>
+                Clique aqui
+            </Text>
         </Pressable>
     </View>)
         

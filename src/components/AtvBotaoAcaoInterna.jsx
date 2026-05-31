@@ -1,4 +1,5 @@
-import { Alert, Pressable } from "react-native";
+import { Alert, Pressable, Text, View, StyleSheet} from "react-native";
+
 
 /*
 [ATIVIDADE BOTÃO COM AÇÃO INTERNA]
@@ -9,14 +10,25 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoInterna"
    e um <Pressable> com o texto "Clique aqui" que ao ser clicado exibe um alerta com o texto 
    "Fui clicado!"
 */
+const estilo = StyleSheet.create({
+    texto:{
+        color:"white",
+        fontSize: 20
+    },
+    pressable:{
+        backgroundColor: "blue",
+    }
+})
+
+
 export default function AtvBotaoAcaoInterna ({})
 {
     return(<View>
-        <Text>
+        <Text style={estilo.texto}>
             Clique abaixo
         </Text>
-        <Pressable OnPress={()=> Alert("Fui clicado!")}>
-            Clique aqui
+        <Pressable style={estilo.pressable} onPress={() => {Alert.alert("Fui clicado!")}}>
+           <Text style={estilo.texto}>Clique aqui</Text>
         </Pressable>
     </View>)
-}
+}1
