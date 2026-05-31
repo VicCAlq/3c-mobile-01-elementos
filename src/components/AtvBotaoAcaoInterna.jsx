@@ -44,7 +44,7 @@ export default function AtvBotaoAcaoInterna ({}) {
 
 
             <Pressable style = {estiloBotao.botao}
-             onPress = {() => window.alert('Fui Clicado!')}>
+             onPress = {() => Alert.alert('Fui Clicado!')}>
 
 
                 <Text  style = {estiloBotao.texto2}>Clique aqui</Text>
