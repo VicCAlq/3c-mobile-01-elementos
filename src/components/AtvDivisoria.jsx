@@ -12,51 +12,48 @@ argumento largura = 30
 <View> esquerda = 30% da largura da View inicial (30% de 90% da largura da tela)
 <View> direita = 70% da largura da View inicial (70% de 90% da largura da  tela)
 */
-import { View, StyleSheet } from "react-native"
+import { View, StyleSheet, Text } from "react-native"
 
 
-const estilosDivisorias = function(largura) {
-    return StyleSheet.create({
-        inicial : {
-            width: "90vw",
-            display: "flex",
-            flex: "wrap",
-            backgroundColor: 'red',
-            
-        },
-        esquerda : {
-            width: '${largura}' + "vw",
-            backgroundColor: 'black'
-        },
-        direita : {
-            width: '${100 - largura}' + "vw",
-            backgroundColor: 'white'
-        }
-    })
-}
-
-export default function AtvDivisoria(largura) {
-
-    if (largura <= 90 || largura >= 10) {
-        const larg = largura
-
-
-
-        return(
-        
-        <View style={estilosDivisorias.inicial}> 
-            <View style={estilosDivisorias(largura).esquerda}>{largura}</View>
-            <View style={estilosDivisorias(largura).direita}>{largura}</View>
-        </View>
-
-    )
-}
-return(
+const estilosDivisorias = StyleSheet.create({
+inicial : {
+    width: "90vw",
+    flexDirection: "row",
+    backgroundColor: 'red',
     
-    <View style={estilosDivisorias.inicial}> </View>
+}
+})
+
+
+export default function AtvDivisoria({largura}) {
+
+if (largura <= 90 && largura >= 10) {
+
+return(
+
+    <View style={estilosDivisorias.inicial}> 
+    <View style={{ 
+    width: `${largura}%`,
+    backgroundColor: 'blue' 
+}}>
+
+<Text>{largura}</Text>
+
+</View>
+    <View style={
+        {width: `${100 - largura}%`,
+        backgroundColor: 'white'
+    }}>
+        <Text>{100 - largura}</Text>
+    </View>
+</View>
+
+)}
+return(
+
+<View style={estilosDivisorias.inicial}> </View>
 
 )
 
-   
+
 }
-//TERMINAR
