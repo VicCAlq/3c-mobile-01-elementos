@@ -5,6 +5,20 @@ import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
 
+import AtvDivisoria from './components/AtvDivisoria';
+import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna';
+import AtvBotaoAcaoInterna from './components/AtvBotaoAcaoInterna';
+import AtvParagrafo from './components/AtvParagrafo';
+
+<AtvDivisoria>
+  <AtvParagrafo></AtvParagrafo>
+
+  <AtvBotaoAcaoExterna>
+  </AtvBotaoAcaoExterna>
+
+  <AtvBotaoAcaoInterna>
+  </AtvBotaoAcaoInterna>
+</AtvDivisoria>
 
 export default function App() {
   return (

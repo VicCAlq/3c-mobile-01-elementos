@@ -71,22 +71,43 @@ if(largura >=10 && largura <= 90)
 
         width: "30vw",
         backgroundColor: 'white'
+>>>>>>> 6792e0f7094e9f80d8c67802567fbbdca247a217
     },
     Viewdireita: {
         width: "70vw",
-        backgroundColor: 'purple'
+        backgroundColor: 'purple',
+   
     }
 })
 
 
-export default function AtvDivisoria ({Largura}) {
+
+
+
+
+export default function AtvDivisoria ({largura}) {
+if(largura >=10 && largura <= 90)
+
+
+ {
     return (
-        (<View style = {estiloView.Viewinicial}>
-            </View>)(
-        <View style = {estiloView.Viewesquerda}>
-            </View>)(
-        <View style = {estiloView.Viewdireita}>
+    <View style = {estiloView.Viewinicial}>
+       
+            <View style = {estiloView.Viewesquerda}>
+                <Text>{largura}</Text>
+            </View>
+           
+            <View style = {estiloView.Viewdireita}>
+                <Text>{largura}</Text>
+            </View>
+
+
             </View>)
-    )
+
+
 }
+
+
+};
+
 

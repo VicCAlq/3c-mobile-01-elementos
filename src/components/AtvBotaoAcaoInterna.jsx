@@ -1,3 +1,5 @@
+
+
 /*
 [ATIVIDADE BOTÃO COM AÇÃO INTERNA]
 
@@ -52,6 +54,10 @@ export default function AtvBotaoAcaoInterna ({}) {
         </View>
     )
 }
+
+
+
+
 
 
 

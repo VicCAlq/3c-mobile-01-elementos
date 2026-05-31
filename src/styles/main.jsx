@@ -1,9 +1,9 @@
 const root = {
   colors: {
     background: "#151617",
-    foreground: "#303535",
+    foreground: "#270931",
     texto: "#e0e0e0",
-    primaria: "#40b070",
+    primaria: "#8340b0",
     primariaEscura: "#206050",
     secundaria: "#a05070",
     complementar: "#80c050",
@@ -20,5 +20,6 @@ const root = {
     gap: "10px",
   }
 }
+
 
 export default root
