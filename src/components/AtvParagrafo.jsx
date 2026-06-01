@@ -6,6 +6,19 @@ Crie e exporte por padrão um componente chamado "AtvParagrafo" que recebe dois 
 
 import {View,Text, StyleSheet} from"react-native"
 
-export default function AtvParaqrafo(){
-    return
+const style = StyleSheet.create({
+    titulo: {
+        fontSize: "32px" 
+    }, conteudo:{
+        fontSize: "16px"
+    }
+})
+
+export default function AtvParagrafo({titulo,conteudo}){
+    return(
+        <View>
+            <Text style={style.titulo}>{titulo}</Text>
+            <Text style={style.conteudo}>{conteudo}</Text>
+        </View>
+    )
 }
