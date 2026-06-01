@@ -18,14 +18,11 @@ argumento largura = 30
 import { View, Text, StyleSheet } from 'react-native';
 import root from '../styles/main';
 
-
-
-
 const estiloView = StyleSheet.create ({
     Viewinicial: {
         width: "90vw",
         backgroundColor: 'white',
-        flexDirection:'row'
+        flexDirection:'row',
     },
     Viewesquerda: {
         width: "30vw",
@@ -35,79 +32,41 @@ const estiloView = StyleSheet.create ({
         width: "70vw",
         backgroundColor: 'purple',
    
-    }
-})
-
-
-
-
-
-
-export default function AtvDivisoria ({largura}) {
-if(largura >=10 && largura <= 90)
-
-
- {
-    return (
-    <View style = {estiloView.Viewinicial}>
-       
-            <View style = {estiloView.Viewesquerda}>
-                <Text>{largura}</Text>
-            </View>
-           
-            <View style = {estiloView.Viewdireita}>
-                <Text>{largura}</Text>
-            </View>
-
-
-            </View>)
-
-
-}
-
-
-};
-
-
-        width: "30vw",
-        backgroundColor: 'white'
->>>>>>> 6792e0f7094e9f80d8c67802567fbbdca247a217
+    },    
+    texto1: {
+    color: 'purple',
+    fontWeight:'bold',
+    textAlign:'center'
     },
-    Viewdireita: {
-        width: "70vw",
-        backgroundColor: 'purple',
-   
+    texto2: {
+    color: 'white',
+    fontWeight:'bold',
+   textAlign:'center'
     }
 })
 
-
-
-
-
-
 export default function AtvDivisoria ({largura}) {
 if(largura >=10 && largura <= 90)
-
-
  {
     return (
     <View style = {estiloView.Viewinicial}>
        
-            <View style = {estiloView.Viewesquerda}>
-                <Text>{largura}</Text>
+            <View style = {{
+                width: `${largura}%`,  
+                backgroundColor: 'pink'
+             }}>
+                <Text style = {estiloView.texto1}>{largura}</Text>
             </View>
            
-            <View style = {estiloView.Viewdireita}>
-                <Text>{largura}</Text>
+            <View style = {{
+                width: `${100-largura}%`,  
+                backgroundColor: 'purple'
+                }}>
+                <Text style = {estiloView.texto2}>{100-largura}</Text>
             </View>
 
-
             </View>)
-
-
 }
-
-
 };
 
 

@@ -35,8 +35,8 @@ const estiloTexto = StyleSheet.create({
 export default function AtvParagrafo({titulo, conteudo}) {
     return (
         <View>
-             <Text style = {estiloTexto.titulo}>titulo</Text>
-             <Text style = {estiloTexto.conteudo}>conteudo</Text>
+             <Text style = {estiloTexto.titulo}>{titulo}</Text>
+             <Text style = {estiloTexto.conteudo}>{conteudo}</Text>
         </View>
     )
 }

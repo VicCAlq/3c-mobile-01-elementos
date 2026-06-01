@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 import root from './styles/main';
 import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
+
 
 import AtvDivisoria from './components/AtvDivisoria';
 import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna';
@@ -23,14 +24,32 @@ import AtvParagrafo from './components/AtvParagrafo';
 export default function App() {
   return (
     <View style={styles.container}>
+       
       <Divisoria>
         <Paragrafo conteudo="Sou um exemplo"/>
         <Botao/>
+         <AtvBotaoAcaoExterna  comando ={() => console.log("Clicado!")}/>
+       
+      <AtvBotaoAcaoInterna>
+      </AtvBotaoAcaoInterna>
+      <AtvParagrafo titulo={"titulo"}>
+        </AtvParagrafo>
+         <AtvParagrafo conteudo={"conteudo"}>
+        </AtvParagrafo>
+      
       </Divisoria>
+      <StatusBar style="auto" />
+   
+  <Text>Texto</Text>
+
+      <AtvDivisoria largura ={30}>
+      </AtvDivisoria>
+     
       <StatusBar style="auto" />
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -43,3 +62,4 @@ const styles = StyleSheet.create({
     color: root.colors.texto
   }
 });
+
