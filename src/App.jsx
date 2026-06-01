@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text} from 'react-native';
 import root from './styles/main';
 import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
@@ -12,6 +12,7 @@ export default function App() {
         <Paragrafo conteudo="Sou um exemplo"/>
         <Botao/>
       </Divisoria>
+      <text>Sou um texto novo</text>
       <StatusBar style="auto" />
     </View>
   );
