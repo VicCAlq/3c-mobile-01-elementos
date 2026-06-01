@@ -7,7 +7,6 @@ const estilo = StyleSheet.create({
     color: root.colors.texto,
     fontSize: 32
   },
-
   conteudo: {
     color: root.colors.texto,
     fontSize: 16

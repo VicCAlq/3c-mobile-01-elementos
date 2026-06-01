@@ -16,7 +16,7 @@ const estilo = StyleSheet.create({
 export default function Botao({})  {
   return(<View>
     <Pressable style={estilo.botao} onPress={() => console.log("Pressionado")}>
-      <Text style={estilo.texto}>Pode clicar!</Text>
+      <Text style={estilo.texto}>CRIQUE HERE BOI</Text>
     </Pressable>
   </View>)
 }

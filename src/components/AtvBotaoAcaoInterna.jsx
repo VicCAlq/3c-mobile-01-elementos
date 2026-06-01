@@ -24,7 +24,7 @@ const estilos = StyleSheet.create({
     padding: 10,
     borderRadius: 7,
   },
-
+  
   textoBotao: {
     color: 'white',
     fontSize: 20,

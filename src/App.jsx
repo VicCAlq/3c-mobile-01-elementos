@@ -9,8 +9,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Divisoria>
-        <Paragrafo conteudo="Sou um exemplo"/>
-        <Botao/>
+        
+        
+        <Paragrafo conteudo="SOU UM MACAQUINHO BONITINHO"/>
+       {"Sou uma batatinha"}
+       
+       <Botao/>
       </Divisoria>
       <StatusBar style="auto" />
     </View>

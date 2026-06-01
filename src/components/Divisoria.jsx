@@ -1,7 +1,8 @@
 import { View, StyleSheet } from 'react-native';
 import root from '../styles/main';
 
-const estilo = StyleSheet.create({
+const estilo = StyleSheet.create(
+  {
   view: {
     borderRadius: "10px",
     padding: root.spacings.paddingG,

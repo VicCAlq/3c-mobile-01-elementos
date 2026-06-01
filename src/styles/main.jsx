@@ -1,9 +1,9 @@
 const root = {
   colors: {
-    background: "#151617",
+    background: "#29063d",
     foreground: "#303535",
     texto: "#e0e0e0",
-    primaria: "#40b070",
+    primaria: "#1e5f7e",
     primariaEscura: "#206050",
     secundaria: "#a05070",
     complementar: "#80c050",
