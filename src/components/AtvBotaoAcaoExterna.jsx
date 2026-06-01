@@ -10,12 +10,17 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoExterna" que receb
  argumento "comando".
 */
 const estilo = StyleSheet.create({
+
+  
     botao: {
-        backgroundColor: "blue",
+        backgroundColor: "steelblue",
+        borderRadius:"20px",
+        maxWidth:"10vw" 
     },
     texto: {
         color: "white",
-    }
+
+    },
 })
 
 export default function AtvBotaoAcaoExterna({comando})

@@ -26,17 +26,18 @@ import { View,StyleSheet} from "react-native";
 const estilodiv = StyleSheet.create
     ({
         estilo: {
-            width: "90%",
+            width: "90vw",
             flexDirection: 'row',
             
         },
     });
 
 
-export default function AtvDivisoria ({largura})
+export default function AtvDivisoria ({largura, children})
 {return(
     <View style={estilodiv.estilo}>
-        <View style={{flex: largura, backgroundColor: 'red'}}></View>
+        <View style={{flex: largura, backgroundColor: 'red'}}>{children}</View>
         <View style={{flex: 100 - largura, backgroundColor: 'blue'}}></View>
+        
     </View>
 )}

@@ -17,17 +17,25 @@ const estilo = StyleSheet.create({
     },
     pressable:{
         backgroundColor: "blue",
-    }
+    },
 })
 
 
 export default function AtvBotaoAcaoInterna ({})
 {
+    const Alerta = () => Alert.alert(
+        "titulo alerta",
+        "texto alerta",
+        [{
+            text: "me clique",
+            onPress: () => console.log("teste")
+        }]
+    )
     return(<View>
         <Text style={estilo.texto}>
             Clique abaixo
         </Text>
-        <Pressable style={estilo.pressable} onPress={() => {Alert.alert("Fui clicado!")}}>
+        <Pressable style={estilo.pressable} onPress={Alerta}>
            <Text style={estilo.texto}>Clique aqui</Text>
         </Pressable>
     </View>)

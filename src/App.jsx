@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Alert } from 'react-native';
 import root from './styles/main';
 import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
@@ -15,14 +15,17 @@ export default function App() {
         <Paragrafo conteudo="Sou um exemplo"/>
         <Botao/>
       </Divisoria>
-  
       <StatusBar style="auto" />
-      <View>
-        <AtvBotaoAcaoExterna comando={() => {Alert.alert("Fui clicado!")}}></AtvBotaoAcaoExterna>
-       <AtvDivisoria largura={40}></AtvDivisoria>
-        <AtvParagrafo titulo={"um paragrafo"} conteudo={"algo,algo,algo..."}></AtvParagrafo>
-        <AtvBotaoAcaoInterna>
-          </AtvBotaoAcaoInterna>
+
+      <View style={{ backgroundColor:"slategray"}}>
+         <AtvDivisoria largura={60}>
+        <AtvParagrafo titulo={"um paragrafo"} conteudo={"algo,algo,algo..."}/>
+         </AtvDivisoria>
+       
+        
+          <AtvBotaoAcaoExterna comando={() => {Alert.alert("alerta2","Fui clicado!")}}/>
+                <AtvBotaoAcaoInterna/>
+       
       </View>
     </View>
 
