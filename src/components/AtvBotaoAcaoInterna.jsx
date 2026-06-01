@@ -8,15 +8,15 @@ import { View, Text, Pressable, Alert } from "react-native";
 
 export default function AtvBotaoAcaoInterna() {
   function handlePress() {
-    Alert.alert("Fui clicado!");
+    Alert.alert("Fui clicadoooo!");
   }
 
   return (
     <View>
-      <Text>Clique abaixo</Text>
+      <Text>Clique aq abaixo</Text>
 
       <Pressable onPress={handlePress}>
-        <Text>Clique aqui</Text>
+        <Text>Clique aqui rapaz</Text>
       </Pressable>
     </View>
   );

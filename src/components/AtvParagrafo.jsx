@@ -10,11 +10,11 @@ export default function AtvParagrafo({ titulo, conteudo }) {
   return (
     <View>
       <Text style={{ fontSize: 32 }}>
-        {titulo}
+        {titulo} aaaaaa
       </Text>
 
       <Text style={{ fontSize: 16 }}>
-        {conteudo}
+        {conteudo} bbbbb
       </Text>
     </View>
   );

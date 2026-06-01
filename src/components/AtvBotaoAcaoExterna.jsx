@@ -9,10 +9,10 @@ import { View, Text, Pressable } from "react-native";
 export default function AtvBotaoAcaoExterna({ comando }) {
   return (
     <View>
-      <Text>Clique abaixo</Text>
+      <Text>Clique aq abaixo</Text>
 
       <Pressable onPress={comando}>
-        <Text>Clique aqui</Text>
+        <Text>Clique aqui rapaz</Text>
       </Pressable>
     </View>
   );
