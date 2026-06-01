@@ -1,9 +1,15 @@
+//arquivo principal 
+//qualquer mudança no arquivo src reflete no código
+// linha 17 e 18 são reconhecidas pela função children (conteúdo)
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import root from './styles/main';
 import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
+import AtvParagrafo from './components/AtvParagrafo';
+
+
 
 export default function App() {
   return (
@@ -12,6 +18,7 @@ export default function App() {
         <Paragrafo conteudo="Sou um exemplo"/>
         <Botao/>
       </Divisoria>
+      <text>Sou um texto novo</text>
       <StatusBar style="auto" />
     </View>
   );
