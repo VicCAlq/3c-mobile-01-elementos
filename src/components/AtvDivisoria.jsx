@@ -8,3 +8,33 @@ argumento largura = 30
 <View> esquerda = 30% da largura da View inicial (30% de 90% da largura da tela)
 <View> direita = 70% da largura da View inicial (70% de 90% da largura da  tela)
 */
+
+import { View, Pressable, Text, StyleSheet } from 'react-native';
+
+export default function AtvDivisoria({largura}){
+    return(
+        <View style={{
+            width:"90%", 
+            height: "80vh", 
+            backgroundColor: "blue", 
+            margin: "2,5%", 
+            borderRadius:"50px",
+            justifyContent: "center",
+            alignContent:"center",
+            display: "flex",
+            gap: "20px"
+            }}>
+            <View style={{
+                width: (largura * 0.9), 
+                backgroundColor:"yellow"
+                }}> {largura}
+            </View>
+            <View style={{
+                width:((100 - largura) * 0.9),
+                backgroundColor: "red"
+            }}>
+                {largura - 90}
+            </View>
+        </View>
+    );
+}
