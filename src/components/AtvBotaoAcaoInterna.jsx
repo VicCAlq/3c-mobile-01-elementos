@@ -25,7 +25,9 @@ const estilo = StyleSheet.create({
 export default function AtvBotaoAcaoInterna({}){
     return (<View>
     <Text style={estilo.texto}>Clique abaixo</Text>
-    <Pressable style={estilo.botao} onPress={() => console.log("Fui clicado")}>
+    <Pressable style={estilo.botao} onPress={() => 
+      Alert.alert('Fui clicado!')
+    }>
     <Text style={estilo.texto}>Clique aqui</Text>
     </Pressable>
     </View>)
