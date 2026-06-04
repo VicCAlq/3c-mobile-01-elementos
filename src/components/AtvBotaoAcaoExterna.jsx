@@ -21,10 +21,10 @@ const estilo = StyleSheet.create({
   }
 })
 
-export default function Comando({}){
+export default function AtvBotaoAcaoExterna({comando}){
     return (<View>
     <Text style={estilo.texto}>Clique abaixo</Text>
-    <Pressable style={estilo.botao} onPress={() => console.log("Pressionado")}>
+    <Pressable style={estilo.botao} onPress={() => comando}>
     <Text style={estilo.texto}>Clique aqui</Text>
     </Pressable>
     </View>)
