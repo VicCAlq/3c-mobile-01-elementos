@@ -33,11 +33,11 @@ const estilodiv = StyleSheet.create
     });
 
 
-export default function AtvDivisoria ({largura, children})
+export default function AtvDivisoria ({largura, conteudoEsquerdo, conteudoDireito})
 {return(
     <View style={estilodiv.estilo}>
-        <View style={{flex: largura, backgroundColor: 'red'}}>{children}</View>
-        <View style={{flex: 100 - largura, backgroundColor: 'blue'}}></View>
+        <View style={{flex: largura, backgroundColor: 'mediumvioletred'}}>{conteudoEsquerdo}</View>
+        <View style={{flex: 100 - largura, backgroundColor: 'midnightblue'}}>{conteudoDireito}</View>
         
     </View>
 )}

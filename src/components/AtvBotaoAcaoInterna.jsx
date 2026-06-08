@@ -16,21 +16,31 @@ const estilo = StyleSheet.create({
         fontSize: 20
     },
     pressable:{
-        backgroundColor: "blue",
+        backgroundColor: "mediumorchid",
+        borderRadius:"20px",
+        maxWidth:"10vw"
     },
 })
 
 
 export default function AtvBotaoAcaoInterna ({})
 {
-    const Alerta = () => Alert.alert(
-        "titulo alerta",
-        "texto alerta",
-        [{
-            text: "me clique",
-            onPress: () => console.log("teste")
-        }]
-    )
+    const Alerta = () => {
+    
+        if (window) {
+            window.alert("teste")
+        } else {
+            Alert.alert(
+                "titulo alerta",
+                "texto alerta",
+                [{
+                    text: "me clique",
+                    onPress: () => console.log("teste")
+                }]
+            )
+        }    
+    }
+
     return(<View>
         <Text style={estilo.texto}>
             Clique abaixo

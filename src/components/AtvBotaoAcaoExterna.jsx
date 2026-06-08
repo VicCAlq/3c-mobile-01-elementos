@@ -13,12 +13,13 @@ const estilo = StyleSheet.create({
 
   
     botao: {
-        backgroundColor: "steelblue",
+        backgroundColor: "mediumpurple",
         borderRadius:"20px",
         maxWidth:"10vw" 
     },
     texto: {
         color: "white",
+        fontSize:"20px"
 
     },
 })

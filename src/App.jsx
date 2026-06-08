@@ -17,13 +17,21 @@ export default function App() {
       </Divisoria>
       <StatusBar style="auto" />
 
-      <View style={{ backgroundColor:"slategray"}}>
-         <AtvDivisoria largura={60}>
-        <AtvParagrafo titulo={"um paragrafo"} conteudo={"algo,algo,algo..."}/>
-         </AtvDivisoria>
+      <View style={{ backgroundColor:"mediumaquamarine"}}>
+        <AtvDivisoria largura={60}
+          conteudoDireito={<AtvParagrafo 
+            titulo={"sobre bla,bla,bla"} 
+            conteudo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing...."}
+          />}
+
+          conteudoEsquerdo={<AtvParagrafo 
+            titulo={"um paragrafo"} 
+            conteudo={"algo,algo,algo..."}
+          />}
+        />
        
         
-          <AtvBotaoAcaoExterna comando={() => {Alert.alert("alerta2","Fui clicado!")}}/>
+          <AtvBotaoAcaoExterna comando={() =>{Alert.alert("alerta2","Fui clicado!")}}/>
                 <AtvBotaoAcaoInterna/>
        
       </View>
