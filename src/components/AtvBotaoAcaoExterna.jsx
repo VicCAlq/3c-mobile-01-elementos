@@ -9,7 +9,7 @@ recebe como argumento uma função chamada "comando". Este componente deve exibi
 */
 import { View, Text, StyleSheet, Pressable, Alert } from 'react-native';
 
-export default function AtvBotaoAcaoInterna(comando) {
+export default function AtvBotaoAcaoExterna(comando) {
     return (
         <View>
 <Text>
