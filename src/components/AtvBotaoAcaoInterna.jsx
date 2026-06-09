@@ -9,7 +9,7 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoInterna" que não 
 
 import { View, Text, StyleSheet, Pressable, Alert } from 'react-native';
 
-export default function AtvBotaoAcaoInterna() {
+export default function AtvBotaoAcaoExterna() {
     return (
         <View>
 <Text>
