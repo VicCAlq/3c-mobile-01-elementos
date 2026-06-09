@@ -10,7 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Divisoria>
-        <Paragrafo conteudo="Sou um exemplo1"/>
+        <Paragrafo conteudo="Sou um exemploooooo"/>
         <Botao/>
         <AtvParagrafo
           titulo={"titulo teste"}
@@ -18,7 +18,7 @@ export default function App() {
         />
       </Divisoria>
       
-      <text>sou um texto novo</text>
+      <text>sou um texto novoo</text>
       <StatusBar style="auto" />
     </View>
   );
