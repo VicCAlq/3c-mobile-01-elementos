@@ -8,3 +8,33 @@ argumento largura = 30
 <View> esquerda = 30% da largura da View inicial (30% de 90% da largura da tela)
 <View> direita = 70% da largura da View inicial (70% de 90% da largura da  tela)
 */
+
+import { View, StyleSheet } from 'react-native'
+
+export default function AtvDivisoria({ largura }) {
+    const estilo = StyleSheet.create({
+        p: {
+            width: "90vw",
+            height: "100px"
+        },
+        e: {
+            width: String(largura) + "%",
+            height: "100px"
+        },
+        d: {
+            width: String(100 - largura) + "%",
+            height: "100px"
+        }
+    })
+
+    return (
+        <View style={estilo.p}>
+            <View style={estilo.e}>
+
+            </View>
+            <View style={estilo.d}>
+
+            </View>
+        </View>
+    )
+}
